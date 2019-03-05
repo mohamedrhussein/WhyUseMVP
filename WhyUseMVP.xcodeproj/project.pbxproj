@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D84C636222E94EE00DC75EF /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D84C635222E94EE00DC75EF /* ProfileModel.swift */; };
+		4D84C638222E950300DC75EF /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D84C637222E950300DC75EF /* ProfilePresenter.swift */; };
 		4DB4D8F2221EBCEA0019F972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB4D8F1221EBCEA0019F972 /* AppDelegate.swift */; };
-		4DB4D8F4221EBCEA0019F972 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB4D8F3221EBCEA0019F972 /* ViewController.swift */; };
+		4DB4D8F4221EBCEA0019F972 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB4D8F3221EBCEA0019F972 /* ProfileViewController.swift */; };
 		4DB4D8F7221EBCEA0019F972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DB4D8F5221EBCEA0019F972 /* Main.storyboard */; };
 		4DB4D8FA221EBCEA0019F972 /* WhyUseMVP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DB4D8F8221EBCEA0019F972 /* WhyUseMVP.xcdatamodeld */; };
 		4DB4D8FC221EBCEA0019F972 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB4D8FB221EBCEA0019F972 /* Assets.xcassets */; };
@@ -35,9 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D84C635222E94EE00DC75EF /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		4D84C637222E950300DC75EF /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		4DB4D8EE221EBCEA0019F972 /* WhyUseMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhyUseMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB4D8F1221EBCEA0019F972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4DB4D8F3221EBCEA0019F972 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4DB4D8F3221EBCEA0019F972 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4DB4D8F6221EBCEA0019F972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DB4D8F9221EBCEA0019F972 /* WhyUseMVP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhyUseMVP.xcdatamodel; sourceTree = "<group>"; };
 		4DB4D8FB221EBCEA0019F972 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +80,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D524E57221EF98800C6A735 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4DB4D8F1221EBCEA0019F972 /* AppDelegate.swift */,
+				4DB4D8FD221EBCEA0019F972 /* LaunchScreen.storyboard */,
+				4DB4D8F5221EBCEA0019F972 /* Main.storyboard */,
+				4DB4D900221EBCEA0019F972 /* Info.plist */,
+				4DB4D8FB221EBCEA0019F972 /* Assets.xcassets */,
+				4DB4D8F8221EBCEA0019F972 /* WhyUseMVP.xcdatamodeld */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		4D84C632222E949200DC75EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D84C635222E94EE00DC75EF /* ProfileModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4D84C633222E949A00DC75EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DB4D8F3221EBCEA0019F972 /* ProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D84C634222E94A500DC75EF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4D84C637222E950300DC75EF /* ProfilePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		4DB4D8E5221EBCE90019F972 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +140,10 @@
 		4DB4D8F0221EBCEA0019F972 /* WhyUseMVP */ = {
 			isa = PBXGroup;
 			children = (
-				4DB4D8F1221EBCEA0019F972 /* AppDelegate.swift */,
-				4DB4D8F3221EBCEA0019F972 /* ViewController.swift */,
-				4DB4D8F5221EBCEA0019F972 /* Main.storyboard */,
-				4DB4D8FB221EBCEA0019F972 /* Assets.xcassets */,
-				4DB4D8FD221EBCEA0019F972 /* LaunchScreen.storyboard */,
-				4DB4D900221EBCEA0019F972 /* Info.plist */,
-				4DB4D8F8221EBCEA0019F972 /* WhyUseMVP.xcdatamodeld */,
+				4D84C632222E949200DC75EF /* Models */,
+				4D84C633222E949A00DC75EF /* View */,
+				4D84C634222E94A500DC75EF /* Presenter */,
+				4D524E57221EF98800C6A735 /* SupportFiles */,
 			);
 			path = WhyUseMVP;
 			sourceTree = "<group>";
@@ -260,8 +298,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DB4D8FA221EBCEA0019F972 /* WhyUseMVP.xcdatamodeld in Sources */,
-				4DB4D8F4221EBCEA0019F972 /* ViewController.swift in Sources */,
+				4DB4D8F4221EBCEA0019F972 /* ProfileViewController.swift in Sources */,
 				4DB4D8F2221EBCEA0019F972 /* AppDelegate.swift in Sources */,
+				4D84C638222E950300DC75EF /* ProfilePresenter.swift in Sources */,
+				4D84C636222E94EE00DC75EF /* ProfileModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +478,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U6Z2MCMJT7;
-				INFOPLIST_FILE = WhyUseMVP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WhyUseMVP/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +496,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U6Z2MCMJT7;
-				INFOPLIST_FILE = WhyUseMVP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WhyUseMVP/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
